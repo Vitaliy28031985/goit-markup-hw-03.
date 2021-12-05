@@ -258,6 +258,7 @@ text-align: center;
 /* Налаштування footera */
 .page-footer { 
     background-color: var(--footer-background-color);
+    padding-bottom: 60px;
     }
     .footer-nav {
 color: rgba(255, 255, 255, 0.6);
