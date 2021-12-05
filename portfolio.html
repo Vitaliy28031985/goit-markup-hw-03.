@@ -10,26 +10,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body class="page">
+    <body class="page container">
         <header class="page-header">
             <div class="main-hader container">
             <nav class="main-hader">
                 <a class="logo" href="./index.html"><span class="page-header-logo">Web</span><span class="page-header-nav">Studio</span></a>
                 <ul class="site-nav">
                     <li><a class="link-nav" href="./index.html">Студия</a></li>
-                    <li><a class="link-nav current link-nav-margin" href="">Портфолио</a></li>
-                    <li><a class="link-nav link-nav-margin" href="">Контакты</a></li>
+                    <li class="link-nav-margin"><a class="link-nav current" href="">Портфолио</a></li>
+                    <li class="link-nav-margin"><a class="link-nav" href="">Контакты</a></li>
                 </ul>
             </nav>
                 <ul class="auth-nav">
-                    <li><a class="link-contact" href="">nfo@devstudio</a></li>
-                    <li><a class="link-contact link-nav-margin" href="">+38 096 111 11 11</a></li>
+                    <li class="link-nav-margin"><a class="link-contact" href="">info@devstudio</a></li>
+                    <li class="link-nav-margin"><a class="link-contact" href="">+38 096 111 11 11</a></li>
                 </ul>
                 </div>
         </header>
         <main>
-<section class="container">
-    <div>
+<div class="container projects-container">
 <ul class="flex-button">
     <li class="flex-button-margin"><button class="portfolio-buton-all" type="button">Все</button></li>
     <li class="flex-button-margin"><button class="portfolio-buton" type="button">Веб-сайты</button></li>
@@ -37,8 +36,7 @@
     <li class="flex-button-margin"><button class="portfolio-buton" type="button">Дизайн</button></li>
     <li><button class="portfolio-buton" type="button">Маркетинг</button></li>
 </ul>
-</div>
-<div class="work-container">
+
 <ul class="flex-contener">
     <li class="flex-element"><a href=""><img src="./images/teh.jpg" alt="Технокряк" width="370"><h2 class="portfolio-work">Технокряк</h2><p class="portfolio-work-type">Веб-сайт</p></a></li>
     <li class="flex-element"><a href=""><img src="./images/new.jpg" alt="Постер New Orlean vs Golden Star" width="370"><h1 class="portfolio-work">Постер New Orlean vs Golden Star</h1><p class="portfolio-work-type">Дизайн</p></a></li>
@@ -51,15 +49,16 @@
     <li class="flex-element"><a href=""><img src="./images/growing.jpg" alt="Growing Business" width="370"><h2 class="portfolio-work">Growing Business</h2><p class="portfolio-work-type">Приложение</p></a></li>
 </ul>
 </div>
-</section>
 </main>
-    <footer class="page-footer">
-        <a class="logo-pading" href="./index.html"><span class="page-footer-logo">Web</span><span class="page-footer-nav">Studio</span></a>
-        <address class="footer-address">
-            г. Киев, пр-т Леси Украинки, 26<br>
-            <a class="footer-nav" href="mailto:info@devstudio">info@devstudio</a><br>
-            <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
-    </footer>
+<footer class="page-footer">
+    <div class="container">
+    <a class="logo-pading" href="./index.html"><span class="page-footer-logo">Web</span><span class="page-footer-nav">Studio</span></a>
+    <address class="footer-address">
+        г. Киев, пр-т Леси Украинки, 26<br>
+        <a class="footer-nav" href="mailto:info@devstudio">info@devstudio</a><br>
+        <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
+    </address>
+</div>
+</footer>
     </body>
 </html>

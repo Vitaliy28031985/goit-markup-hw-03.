@@ -21,6 +21,14 @@ ul, ol {
     padding: 0px;
     margin: 0px;
 }
+h1, h2, h3 {
+    padding: 0px;
+    margin: 0px;   
+}
+p {
+    padding: 0px;
+    margin: 0px;
+}
 img {
     margin: 0px;
     padding: 0px;
@@ -31,10 +39,11 @@ img {
 Колір футера - background: #FFFFFF; */
 /* Налаштування headerа */
 .page {
-Background-color: var(--page-backround-color)}
+Background-color: var(--page-backround-color);
+}
 .page-header-nav {
 color: var(--title-text-color);
-font-family: 'Roboto';
+font-family: 'Raleway';
 font-size: 26px;
 line-height: 1.2;
 text-align: left;
@@ -47,6 +56,8 @@ line-height: 1.2;
 text-align: left;
 }
 .page-header {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     border-bottom:1px solid rgba(238, 238, 238, 1);
     background-color: var(--logo-text-color);
 }
@@ -84,20 +95,27 @@ line-height: 1.2;
 }
 /* Налаштування скуції "hero" */
 .hero { 
+    margin-left: 0px;
+    margin-right: 0px;
     background-color: var(--footer-background-color);
     text-align: center;
 }
 .hero-text {
+    display: block;
+    padding-left: 237px;
+    padding-right: 237px;
+    margin: 0px;
+    /* width: 696px; */
 color: var(--logo-text-color);
 text-transform:uppercase;
 font-size: 44px;
 line-height: 1.4;
 text-align: center;
-margin-bottom: 30px;
-margin-top: 0px;
 padding-top: 200px;
+/* padding-bottom: 200px; */
 }
 .hero-buton {
+    margin-top: 30px;
     margin-bottom: 200px;
     background-color: var(--accent-color);
     color: var(--logo-text-color);
@@ -126,10 +144,25 @@ text-align: center;
     color: var(--title-text-color);
 }
     /* Налаштування секції "Переваги"  */
-    .section-benefits {
-        display: none;
+  .section-benefits {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
+    .visually-hidden {
+        position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
     }
 .section-benefits-title {
+    margin-bottom: 10px;
     color: var(--title-text-color);
     text-transform:uppercase;
 font-size: 14px;
@@ -148,20 +181,22 @@ color: var(--title-text-color);
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
-margin-bottom: 50px;
-margin-top: 94px;
+padding-bottom: 50px;
+margin-top: 0px;
 }
 /* Налаштування скуції "Наша команда" */
 .pege-team {
 color: var(--title-text-color);
+margin-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 50px;
+padding-top: 94px;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
-padding-top: 94px;
 }
 .page-team-employee {
     padding-bottom: 10px;
-    padding-top: 30px;
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 16px;
@@ -169,7 +204,7 @@ line-height: 1.2;
 text-align: center;
 }
 .section-team-specialty {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 color: var(--primery-text-color);
 font-size: 16px;
 line-height: 19px;
@@ -180,8 +215,9 @@ text-align: center;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     border-radius: 1px;
-    
-    margin-bottom: 94px;
+    Height: 368px;
+    Width: 270px;
+    margin-bottom:0;
 }
 /* Налаштування сторінки portfolio */
 .portfolio-buton {
@@ -221,12 +257,7 @@ text-align: center;
 }
 /* Налаштування footera */
 .page-footer { 
-    /* display: flex;
-    align-items: center;
-    align-content:stretch; */
-    padding-left: 20px;
     background-color: var(--footer-background-color);
-    Height: 252px;
     }
     .footer-nav {
 color: rgba(255, 255, 255, 0.6);
@@ -246,7 +277,7 @@ text-align: left;
     .page-footer-nav {
         margin-top: 9px;
         color: var(--logo-text-color);
-        font-family: 'Roboto';
+        font-family: 'Raleway';
         font-size: 26px;
         line-height: 1.2;
         text-align: left;
@@ -260,17 +291,16 @@ text-align: left;
 }
 /* оформлення блоків */
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 .section-benefits-margin {
-    margin-top: 94px;
-margin-bottom: 95px;
+    padding-top: 94px;
 }
 .occupation {
-margin-bottom: 94px;
+padding-bottom: 94px;
 }
 .team-margin-padding {
     margin-bottom: 0px;
@@ -278,12 +308,13 @@ padding-bottom: 94px;
 }
 .site-nav {
    display: flex;
+   margin-bottom: 0px;
    margin-left: 93px;
 }
 .auth-nav {
     display:flex;
-    
-    margin-left: 331px;
+    margin-bottom: 0px;
+    margin-left: auto;
 }
 .link-nav-margin {
     margin-left: 50px;
@@ -294,33 +325,48 @@ padding-bottom: 94px;
 
 }
 .benefis-list {
+    margin-right: 0px;
+    margin-top: -30px;
     display: flex;
     justify-content: flex-start;
 }
 .benefits-margin {
+    /* width: 270px; */
 margin-left: 30px;
 }
+.work-margin {
+    width: 270px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+.employee {
+    padding-bottom: 94px;
+    justify-content:center;
+}
 .work-list {
+    margin-left: -60px;
+    justify-content:center;
     display: flex;
     background-color: rgba(255, 255, 255, 1);
 }
-
+.name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team {
     display: flex;
-    justify-content:center;
+    padding-top: 50px;
+    margin: -45px;
+    justify-content:flex-start;
+    display: flex;
 }
-
-.work-container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.projects-container {
+   padding-bottom: 94px;
+   padding-top: 94px; 
 }
 .flex-contener {
  display: flex;
  flex-wrap: wrap;
- 
 }
 .flex-element {
   width: 370px;
@@ -331,12 +377,12 @@ margin-left: 30px;
 }
 .flex-element:nth-child(3n) {
     margin-right: 0px;
+    /* margin-bottom: 0px; */
 }
 .flex-button {
     display: flex;
+    padding-bottom: 56px;
     justify-content:center;
-    margin-bottom: 56px;
-    margin-top: 100px;
 }
 .flex-button-margin {
     margin-right: 8px;
@@ -345,12 +391,3 @@ margin-left: 30px;
     display: block;
     padding-top: 60px;
 }
-/* .logo-footer {
-    margin-top: 60px;
-} */
-/* .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 0px;
-    display: flex;
-} */
