@@ -30,6 +30,7 @@ p {
     margin: 0px;
 }
 img {
+    display: block;
     margin: 0px;
     padding: 0px;
 }
@@ -39,7 +40,7 @@ img {
 Колір футера - background: #FFFFFF; */
 /* Налаштування headerа */
 .page {
-Background-color: var(--page-backround-color);
+background-color: var(--page-backround-color);
 }
 .page-header-nav {
 color: var(--title-text-color);
@@ -61,21 +62,22 @@ text-align: left;
     border-bottom:1px solid rgba(238, 238, 238, 1);
     background-color: var(--logo-text-color);
 }
-.link-nav {
-padding-top: 32px;;
+.nav-padding {
+display: block;
+padding-top: 32px;
 padding-bottom: 32px;
-display: block; 
-
+}
+.link-nav {
+/* display: flex; */
 color: rgba(33, 33, 33, 1);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.2;
 } 
-
 .link-contact {
+display: block;
 padding-top: 32px;
 padding-bottom: 32px;
-display: block;
 
 color: rgba(117, 117, 117, 1);
 font-Weight: 500;
@@ -95,28 +97,26 @@ line-height: 1.2;
 }
 /* Налаштування скуції "hero" */
 .hero { 
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--footer-background-color);
     text-align: center;
 }
 .hero-text {
-    display: block;
-    padding-left: 237px;
-    padding-right: 237px;
-    margin: 0px;
-    /* width: 696px; */
+display: block;
+margin: auto;
+max-width: 696px;
 color: var(--logo-text-color);
 text-transform:uppercase;
 font-size: 44px;
 line-height: 1.4;
 text-align: center;
-padding-top: 200px;
-/* padding-bottom: 200px; */
 }
 .hero-buton {
     margin-top: 30px;
-    margin-bottom: 200px;
     background-color: var(--accent-color);
     color: var(--logo-text-color);
 font-size: 16px;
@@ -139,6 +139,8 @@ text-align: center;
 /* Налаштування "background-color" секцій */
 .section-page {
     background-color: var(--team-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section {
     color: var(--title-text-color);
@@ -181,22 +183,20 @@ color: var(--title-text-color);
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
-padding-bottom: 50px;
+margin-bottom: 50px;
 margin-top: 0px;
 }
 /* Налаштування скуції "Наша команда" */
 .pege-team {
 color: var(--title-text-color);
 margin-top: 0px;
-margin-bottom: 0px;
-padding-bottom: 50px;
-padding-top: 94px;
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
 }
 .page-team-employee {
-    padding-bottom: 10px;
+margin-bottom: 10px;
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 16px;
@@ -260,14 +260,14 @@ text-align: center;
     background-color: var(--footer-background-color);
     padding-bottom: 60px;
     }
-    .footer-nav {
+.footer-nav {
 color: rgba(255, 255, 255, 0.6);
 font-size: 14px;
 font-style: normal;
 line-height: 1.7;
 text-align: left;
 }
-    .footer-address {
+.footer-address {
 margin-top: 40px;
 color: var(--logo-text-color);
 font-size: 14px;
@@ -275,7 +275,7 @@ font-style: normal;
 line-height: 1.7;
 text-align: left;
     }
-    .page-footer-nav {
+.page-footer-nav {
         margin-top: 9px;
         color: var(--logo-text-color);
         font-family: 'Raleway';
@@ -283,7 +283,7 @@ text-align: left;
         line-height: 1.2;
         text-align: left;
     }
-    .page-footer-logo {
+.page-footer-logo {
 color: var(--accent-color);
 font-family: 'Raleway';      
 font-size: 26px;
@@ -296,9 +296,6 @@ text-align: left;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
-.section-benefits-margin {
-    padding-top: 94px;
 }
 .occupation {
 padding-bottom: 94px;
@@ -315,6 +312,7 @@ padding-bottom: 94px;
 .auth-nav {
     display:flex;
     margin-bottom: 0px;
+    margin-right: 0px;
     margin-left: auto;
 }
 .link-nav-margin {
@@ -323,16 +321,17 @@ padding-bottom: 94px;
 .main-hader {
     display:flex;
     align-items: center;
+    /* justify-content:flex-start; */
 
 }
 .benefis-list {
     margin-right: 0px;
-    margin-top: -30px;
+    margin-left: -30px;
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 .benefits-margin {
-    /* width: 270px; */
+    width: 270px;
 margin-left: 30px;
 }
 .work-margin {
@@ -340,12 +339,12 @@ margin-left: 30px;
     margin-left: 30px;
     margin-bottom: 0px;
 }
-.employee {
-    padding-bottom: 94px;
-    justify-content:center;
+.occupation-margin {
+    margin-left: 30px;
+    width: 370px;
 }
 .work-list {
-    margin-left: -60px;
+    margin-left: -30px;
     justify-content:center;
     display: flex;
     background-color: rgba(255, 255, 255, 1);
@@ -356,10 +355,7 @@ margin-left: 30px;
 }
 .team {
     display: flex;
-    padding-top: 50px;
-    margin: -45px;
-    justify-content:flex-start;
-    display: flex;
+    margin-left: -30px;
 }
 .projects-container {
    padding-bottom: 94px;
