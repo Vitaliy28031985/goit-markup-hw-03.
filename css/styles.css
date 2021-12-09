@@ -97,7 +97,6 @@ line-height: 1.2;
 }
 /* Налаштування скуції "hero" */
 .hero { 
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -246,29 +245,50 @@ text-align: center;
 color: var(--title-text-color);
 font-size: 18px;
 line-height: 2;
-text-align: center;
+text-align: left;
 }
 .portfolio-work-type {
 color: var(--primery-text-color);
 font-size: 16px;
 line-height: 1.9;
 text-align: left;
-text-align: center;
+text-align: left;
+}
+.card-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-right: 1px solid rgba(238, 238, 238, 1);
 }
 /* Налаштування footera */
 .page-footer { 
     background-color: var(--footer-background-color);
     padding-bottom: 60px;
+    padding-top: 60px;
     }
-.footer-nav {
-color: rgba(255, 255, 255, 0.6);
-font-size: 14px;
-font-style: normal;
-line-height: 1.7;
-text-align: left;
-}
+    .footer-nav {
+        display: block;
+        padding-top: 9px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.7;
+        text-align: left;
+        }
+    .footer-tel {
+    padding-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.7;
+    text-align: left;
+    }
+
 .footer-address {
-margin-top: 40px;
+margin-top: 9px;
 color: var(--logo-text-color);
 font-size: 14px;
 font-style: normal;
@@ -357,20 +377,16 @@ margin-left: 30px;
     display: flex;
     margin-left: -30px;
 }
-.projects-container {
-   padding-bottom: 94px;
-   padding-top: 94px; 
-}
+
 .flex-contener {
  display: flex;
  flex-wrap: wrap;
+ margin-bottom: -30px;
 }
 .flex-element {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-
 }
 .flex-element:nth-child(3n) {
     margin-right: 0px;
@@ -378,13 +394,13 @@ margin-left: 30px;
 }
 .flex-button {
     display: flex;
-    padding-bottom: 56px;
+    margin-bottom: 50px;
     justify-content:center;
 }
 .flex-button-margin {
     margin-right: 8px;
 }
-.logo-pading{
-    display: block;
-    padding-top: 60px;
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
